@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastre-se</title>
+  <link rel="stylesheet" href="asset/style.css">
+  
+</head>
+<body>
+  <div class="container">
+    <header> 
+      <h1>Faça sua Reserva</h1>     
+    </header>
+    <form class="form-cadastro" autocomplete="off">
+      <div class="form-group">
+          <label for="cidade" class="label-azul">Cidade de Destino</label>
+          <select class="select-cidade" id="cidade" required>
+            <option value="">Selecione a cidade</option>
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Belo Horizonte</option>
+            <option>Salvador</option>
+            <option>Brasília</option>
+            <option>Florianópolis</option>
+          </select>
+        </div>
+         <div class="form-row">
+        <div class="form-group menor-group" style="width: 100%;">
+          <label>
+            <input type="checkbox" id="menor">
+            Menor de 18 anos?
+          </label>
+        </div>
+        <div class="form-group acompanhante-group hidden" style="width: 100%;">
+          <label>
+            <input type="checkbox" id="acompanhado">
+            Está acompanhado por responsável?
+          </label>
+        </div>
+      </div>
+       <div class="form-row nome-acompanhante-row hidden">
+        <div class="form-group" style="width: 100%;">
+          <label for="nome-acompanhante">Nome do Acompanhante</label>
+          <input type="text" id="nome-acompanhante" placeholder="Digite o nome do acompanhante">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="primeiro-nome" class="label-azul">Primeiro Nome</label>
+          <input type="text" id="primeiro-nome" placeholder="Digite seu primeiro nome" required>
+        </div>
+        <div class="form-group">
+          <label for="sobrenome" class="label-azul">Sobrenome</label>
+          <input type="text" id="sobrenome" placeholder="Digite seu sobrenome" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="Digite seu e-mail" required>
+        </div>
+        <div class="form-group">
+          <label for="celular">Celular</label>
+          <input type="text" id="celular" placeholder="(xx) xxxx-xxxx" required>
+        </div>
+      </div>
+   
+      <div class="form-row genero-row">
+        <span class="genero-label">Gênero</span>
+        <label><input type="radio" name="genero" value="feminino" required> Feminino</label>
+        <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+        <label><input type="radio" name="genero" value="outros"> Outros</label>
+        <label><input type="radio" name="genero" value="nao-dizer"> Prefiro não dizer</label>
+      </div>
+      <button type="submit" id="continuar" class="btn-continuar">Continuar</button>
+    </form>
+    <div id="mensagem-confirmacao" style="display: none;">
+      <h2>Reserva Confirmada!</h2>
+      <p>Obrigado por se cadastrar. Sua reserva foi confirmada.</p>
+      <button id="voltar" class="btn-voltar">Voltar</button>
+    </div>
+  </div>
+  <script src="asset/script.js" defer></script>
+  </body>
+</html>

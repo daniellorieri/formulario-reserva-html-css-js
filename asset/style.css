@@ -1,0 +1,191 @@
+:root {
+  --primary: #6c63ff;
+  --label-blue: #3b3be7;
+  --input-bg: #fff;
+  --input-border: #e4e4e4;
+  --input-focus: #6c63ff;
+  --border-radius: 10px;
+  --shadow: 0 2px 20px #0001;
+  --transition: 0.2s;
+  --font-main: 'Segoe UI', 'Arial', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #fafafd;
+  font-family: var(--font-main);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 32px 30px 26px 30px;
+  max-width: 600px;
+  width: 95vw;
+  margin: 32px auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.btn-entrar { 
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 7px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background var(--transition);
+}
+.select-cidade {
+
+  width: 200px;
+}
+
+.btn-entrar:hover {
+  background: #544be6;
+}
+
+.form-cadastro {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-row {
+  display: flex;
+  gap: 18px;
+  width: 100%;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.label-azul {
+  color: var(--label-blue);
+  font-weight: 600;
+  border-bottom: 2px solid var(--primary);
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.form-group label:not(.label-azul) {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.form-group input {
+  background: var(--input-bg);
+  border: 1.5px solid var(--input-border);
+  border-radius: var(--border-radius);
+  padding: 11px 13px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  margin-bottom: 0;
+}
+.form-group input:focus {
+  border-color: var(--input-focus);
+  box-shadow: 0 0 0 2px #6c63ff33;
+}
+
+.genero-row {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 16px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.genero-label {
+  margin-right: 18px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.genero-row label {
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: 0.98rem;
+}
+
+.btn-continuar {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 13px 0;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background var(--transition);
+  box-shadow: 0 1px 8px #6c63ff22;
+}
+.btn-continuar:hover {
+  background: #544be6;
+}
+
+#mensagem-confirmacao {
+  margin-top: 24px;
+  color: #218838;
+  background: #e8ffe8;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 1.15em;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .container {
+    padding: 20px 7vw 18px 7vw;
+    max-width: 99vw;
+  }
+  .form-row {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px 2vw 12px 2vw;
+    min-width: unset;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .btn-entrar {
+    padding: 7px 14px;
+    font-size: .95rem;
+  }
+   }
+  .select-cidade {
+    width: 100%;
+  }
