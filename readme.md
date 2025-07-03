@@ -4,7 +4,7 @@
 
 ## 📋 Descrição
 
-Um formulário de cadastro de reserva onde o cliente escolhe para qual cidade deseja viajar e informa se é menor de idade e se está acompanhado. O intuito é aplicar conceitos adquiridos em curso de JavaScript da Alura.
+Desenvolvimento de um formulário de cadastro de reserva onde o cliente escolhe para qual cidade deseja viajar e informa se é menor de idade e se está acompanhado. O intuito é aplicar conceitos adquiridos em curso de HTML5 e JavaScript da Alura.
 
 ### 🧰 Tecnologias utilizadas
 
