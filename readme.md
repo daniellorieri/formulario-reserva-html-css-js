@@ -1,12 +1,10 @@
 # Nome do Projeto
 
-[🔗 Acesse o Projeto Online](https://seu-projeto.vercel.app)
+[🔗 Acesse o Projeto Online](https://formulario-reserva-html-css-js.vercel.app)
 
 ## 📋 Descrição
 
-Breve descrição do que o projeto faz. Exemplo:
-
-Um site de lista de tarefas desenvolvido com HTML, CSS e JavaScript. Permite adicionar, marcar como concluída e remover tarefas.
+Um formulário de cadastro de reserva onde o cliente escolhe para qual cidade deseja viajar e informa se é menor de idade e se está acompanhado. O intuito é aplicar conceitos adquiridos em curso de JavaScript da Alura.
 
 ### 🧰 Tecnologias utilizadas
 
